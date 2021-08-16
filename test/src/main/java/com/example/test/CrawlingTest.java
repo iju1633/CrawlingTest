@@ -79,7 +79,7 @@ public class CrawlingTest {
 					.data("lon", lon)
 					.data("addon","COMPLEX")
 					.data("bAddon", "COMPLEX")
-					.ignoreContentType(true)	//JOSN 값으로 받아온다.
+					.ignoreContentType(true)	//JSON 값으로 받아온다.
 					.get();
 
 
@@ -110,7 +110,7 @@ public class CrawlingTest {
 							.data("isOnlyIsale", "false")
 							.data("sort", "readRank")
 							.data("page", j + "")
-							.ignoreContentType(true)	//JOSN 값으로 받아온다.
+							.ignoreContentType(true)	//JSON 값으로 받아온다.
 							.get();
 
 					body = doc.select("body").text();
